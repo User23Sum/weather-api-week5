@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2022",                                  
+    "module": "node16",                               
+    "lib":["ES2022"],
+    "strict": true, 
+    "esModuleInterop": true,   
+    "moduleResolution": "node16",
+    "rootDir": ".", 
+    "outDir": "dist", 
+    "allowSyntheticDefaultImports": true, 
+    "importHelpers": true,
+    "alwaysStrict": true, 
+    "sourceMap": true, // Generates corresponding '.map' file. Source maps allow debuggers and other tools to map the compiled JavaScript back to the original TypeScript source files.
+    "forceConsistentCasingInFileNames": true, // Ensures that the case of references to filenames matches the actual case on disk, preventing issues on case-sensitive file systems.
+    "noFallthroughCasesInSwitch": true, // Reports an error if a switch case falls through to the next case without a break statement.
+    "noImplicitReturns": true, // Ensures that all functions return a value where the return type isn't void or any.
+    "noUnusedLocals": true, // Reports errors on local variables that are declared but never used within their containing function.
+    "noUnusedParameters": true, // Raises errors on function parameters that are never used.
+    "noImplicitAny": false, // When false, allows expressions and declarations with an implied 'any' type.
+    "noImplicitThis": false, // When false, allows 'this' expressions with an implied 'any' type.
+    "strictNullChecks": false, // When false, variables can be null or undefined without explicit checking.
+    "skipLibCheck": true, 
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "include": ["src/**/*"] 
+}
